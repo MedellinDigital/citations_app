@@ -1,0 +1,16 @@
+<h1>Citations</h1>
+ 
+<%= link_to 'New citation', new_citation_path %>
+
+<table>
+  <tr>
+    <th>Text</th>
+    <th></th>
+  </tr>
+ 
+  <% @citations.each do |citation| %>
+    <tr>
+      <td><%= citation.text %></td>
+    </tr>
+  <% end %>
+</table>
